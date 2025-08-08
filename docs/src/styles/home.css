@@ -1,1 +1,32 @@
+* {
+    color: lavender;
+}
 
+body {
+    background-color:black;
+}
+
+#intro {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    margin: 100px;
+}
+
+#homeButton {
+    display: inline-block;
+    align-items: left;
+}
+
+#projects {
+    display: fixed;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
