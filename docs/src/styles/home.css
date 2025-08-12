@@ -9,29 +9,15 @@ body {
     margin:0;
 }
 
-main {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 80px);
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 15px 30px;
     display: flex;
-    padding: 20px;
-}
-
-#intro {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-#intro section {
-    flex: 1 1 300px;
-    min-width: 300px;
+    z-index: 1000;
 }
 
 #homeButton {
@@ -61,28 +47,63 @@ main {
     color: Indigo;
 }
 
+main {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    padding: 20px;
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#intro section {
+    flex: 1 1 300px;
+    min-width: 300px;
+}
+
 #name {
     font-size: 50px;
     margin: 0 0 10px;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    background-color: black;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
 #headshot img {
     height: auto;
     width: 300px;
-    max-width: 100%;
+    max-width: 80%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+#footer h2 {
+    color: lavender;
+}
+
+.contactlinks {
+    color: lavender;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
 }
 
 @media (max-width: 600px) {
