@@ -120,3 +120,81 @@ footer {
         margin: 0 auto;
     }
 }
+
+/* Wrapper for link styling */
+.rocket-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* SVG scaling */
+.rocket-icon {
+  width: 80px;
+  height: 120px;
+}
+
+/* Rocket initially in default position */
+.rocket-group {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+/* When hovered, rocket lands */
+.rocket-wrapper:hover .rocket-group {
+  transform: translateY(24px);
+}
+
+/* Rocket visuals */
+.rocket-body, .fin {
+  fill: white;
+}
+
+.flame {
+  fill: orange;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+/* Flame shows briefly on hover */
+.rocket-wrapper:hover .flame {
+  opacity: 0;
+}
+
+/* Smoke styling */
+.smoke {
+  fill: lightgray;
+  opacity: 0;
+  transform: scale(1);
+}
+
+/* Smoke animation */
+@keyframes smokePuff {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(0px);
+  }
+  30% {
+    opacity: 0.7;
+    transform: scale(1.2) translateY(-5px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-15px);
+  }
+}
+
+/* Trigger smoke animation on hover */
+.rocket-wrapper:hover .smoke1 {
+  animation: smokePuff 0.6s ease-out forwards;
+}
+.rocket-wrapper:hover .smoke2 {
+  animation: smokePuff 0.6s ease-out 0.1s forwards;
+}
+.rocket-wrapper:hover .smoke3 {
+  animation: smokePuff 0.6s ease-out 0.2s forwards;
+}
+
+/* Ground styling */
+.ground {
+  fill: lavender;
+}
