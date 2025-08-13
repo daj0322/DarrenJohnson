@@ -30,10 +30,13 @@ header {
     right: 15px;
 }
 
-#projectsLink {
+#navigation a, #navigation p {
     text-decoration: none;
     color: lavender;
+    font-size: x-large;
     font-weight: bold;
+    margin: 0px 10px;
+    display: inline-block;
 }
 
 #projectsLink:visited {
@@ -44,7 +47,7 @@ header {
 #projectsLink:hover,
 #projectsLink:focus {
     text-decoration: none;
-    color: Indigo;
+    color: lavender;
 }
 
 main {
