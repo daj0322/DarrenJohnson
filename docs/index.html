@@ -11,29 +11,34 @@
       <div id="homeButton">
         <a href="index.html" class="rocket-wrapper">
           <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="rocket-icon">
-            <!-- Rocket group -->
+
+            <!-- Rocket group (this moves on hover) -->
             <g class="rocket-group">
               <path class="rocket-body" d="M50 5 
                       C40 25, 40 60, 50 80 
                       C60 60, 60 25, 50 5 Z" />
+
               <path class="fin" d="M40 60 
                       C30 70, 30 85, 42 85 
                       C42 75, 42 65, 40 60 Z" />
+
               <path class="fin" d="M60 60 
                       C70 70, 70 85, 58 85 
                       C58 75, 58 65, 60 60 Z" />
+
               <path class="flame" d="M45 85 
                       C47 95, 53 95, 55 85 
                       C52 90, 48 90, 45 85 Z" />
             </g>
 
-            <!-- Smoke (moved before the ground) -->
-            <circle class="smoke smoke1" cx="42" cy="100" r="4" />
-            <circle class="smoke smoke2" cx="50" cy="102" r="5" />
-            <circle class="smoke smoke3" cx="58" cy="100" r="4" />
+            <!-- Smoke puffs (outside the rocket group so they stay in place) -->
+            <circle class="smoke smoke-left1" cx="49" cy="108" r="7" />
+            <circle class="smoke smoke-right1" cx="51" cy="108" r="7" />
+            <circle class="smoke smoke-left2" cx="49" cy="108" r="6.5" />
+            <circle class="smoke smoke-right2" cx="51" cy="108" r="6.5" />
 
-            <!-- Ground (on top) -->
-            <rect class="ground" x="0" y="110" width="100" height="5" />
+            <!-- Ground -->
+            <rect class="ground" x="10" y="110" width="80" height="5" />
           </svg>
         </a>
       </div>
