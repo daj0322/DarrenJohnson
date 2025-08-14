@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="rocket-icon" fill="black">
+  <!-- Rocket body -->
+  <path d="M50 5 
+           C40 25, 40 60, 50 80 
+           C60 60, 60 25, 50 5 Z"></path>
+  
+  <!-- Left fin -->
+  <path d="M40 60 
+           C30 70, 30 85, 42 85 
+           C42 75, 42 65, 40 60 Z"></path>
+
+  <!-- Right fin -->
+  <path d="M60 60 
+           C70 70, 70 85, 58 85 
+           C58 75, 58 65, 60 60 Z"></path>
+
+  <!-- Flame -->
+  <path d="M45 85 
+           C47 95, 53 95, 55 85 
+           C52 90, 48 90, 45 85 Z" fill="orange"></path>
+</svg>
