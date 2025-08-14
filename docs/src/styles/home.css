@@ -143,6 +143,18 @@ footer img {
     #intro {
         flex-direction: column;
         text-align: center;
+        padding: 10%;
+    }
+
+    #headshot {
+        order: -1;
+    }
+
+    #intro section {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
     #headshot img {
